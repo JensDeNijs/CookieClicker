@@ -3,13 +3,15 @@
 <head>
     <title>Cookie Clicker</title>
     <meta charset="utf-8">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+          integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
     <style>
 
-
         /* Set height of the grid so .sidenav can be 100% (adjust as needed) */
-        .row.content {height: 450px}
+        .row.content {
+            height: 1000px;
+        }
 
         /* Set gray background color and 100% height */
         .sidenav {
@@ -26,6 +28,14 @@
             }
             .row.content {height:auto;}
         }
+        image{
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            width: 50%;
+            height: auto;
+        }
+
     </style>
 </head>
 <body>
@@ -39,25 +49,28 @@
             <p><a href="#">Link</a></p>
             <p><a href="#">Link</a></p>
         </div>
-        <div class="col-sm-8 text-left">
-            <h1>Welcome</h1>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+        <div class="col-sm-8 ">
+            <h1>Cookie Clicker</h1>
+            <p>Click the Cookie to get more Cookies.</p>
             <hr>
-            <h3>Test</h3>
-            <p>Lorem ipsum...</p>
+            <h3><span id="cookies">0</span> COOKIES</h3>
+            <p>Cookies per second: <span id="perSec">0</span></p>
+            <img src="https://i.pinimg.com/564x/dc/c8/1a/dcc81ae124a78573b1c8bae1586d4efe.jpg" alt="Italian Trulli" id="cookieButton">
         </div>
-        <div class="col-sm-2 sidenav">
-            <div class="well">
-                <p>ADS</p>
+        <div class="col-sm-2 sidenav text-left">
+            <div class="well ">
+                <button type="button" id="btnClickerUpgrade">Clicker Upgrade <span id="clickerUpgrade"></span></button>
+
             </div>
-            <div class="well">
-                <p>ADS</p>
+            <div class="well ">
+                <button type="button" id="btnAutoClickerUpgrade">Autoclicker Upgrade <span id="autoClickerUpgrade"></span></button>
+
             </div>
         </div>
     </div>
 </div>
 
 
-
+<script src="./script.js"></script>
 </body>
 </html>
