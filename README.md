@@ -1,5 +1,5 @@
 # CookieClicker
-https://jensdenijs.github.io/CookieClikker/
+https://jensdenijs.github.io/CookieClicker/
 
 ToDo
 - notes in code
