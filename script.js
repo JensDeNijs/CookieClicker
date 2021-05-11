@@ -37,7 +37,7 @@
     htmlAutoClickerUpgrade2.textContent = autoClickerMultiplier2;
     htmlAutoBuyClick2.textContent = autoClickerUpgrade2;
 
-    //Variables for the second AutoUpgrade
+    //Variables for the third AutoUpgrade
     let autoClickerMultiplier3 = 1.4;
     let autoClickerUpgrade3 = 300;
     let htmlAutoClickerUpgrade3 = document.getElementById("autoClickerUpgrade3");
@@ -47,18 +47,11 @@
 
 
 
-    /*function variableMaker(nr,multiplier,upgrade,){
-        let a = autoClickerMultiplier+nr;
-        let autoClickerMultiplier = 1.2;
-    }*/
-
-
     //function for Autocounter
     window.setInterval(function () {
         totalCookies += autoClicker;
         totalCookies = roundOneDec(totalCookies);
         htmlTotalCookies.textContent = totalCookies;
-
     }, 1000);
 
 
@@ -67,7 +60,6 @@
         totalCookies += clicker;
         totalCookies = roundOneDec(totalCookies);
         htmlTotalCookies.textContent = totalCookies;
-
     })
 
     //Cookieclick shop item
@@ -82,7 +74,6 @@
             htmlClickerUpgrade.value = roundOneDec(clicker * 1.2);
             htmlPerClick.textContent = clicker;
             htmlTotalCookies.textContent = totalCookies;
-
         }
     })
 
@@ -98,7 +89,7 @@
         autoClickerUpgrade2 = shopItem(autoClickerUpgrade2, autoClickerMultiplier2, htmlAutoBuyClick2, htmlAutoClickerUpgrade2);
     })
 
-    //Second AutoShopItem
+    //Third AutoShopItem
     document.getElementById("btnAutoClickerUpgrade3").addEventListener("click", function () {
 
         autoClickerUpgrade3 = shopItem(autoClickerUpgrade3, autoClickerMultiplier3, htmlAutoBuyClick3, htmlAutoClickerUpgrade3);
@@ -109,7 +100,7 @@
 
 
 
-    //Function for automating the shopprocces
+    //Function for automating the shopProcess
     function shopItem(upgraderCost, multiplier, htmlCost, htmlShopAutoclicker) {
 
         if ((totalCookies - upgraderCost) >= 0) {
@@ -117,7 +108,6 @@
             totalCookies = roundOneDec(totalCookies - upgraderCost);
             upgraderCost = roundOneDec(upgraderCost * multiplier);
             autoClicker = roundOneDec(autoClicker * multiplier);
-
 
             htmlCost.textContent = upgraderCost;
             htmlPerSec.textContent = autoClicker;

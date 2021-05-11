@@ -1,0 +1,60 @@
+* {
+    font-family: 'Odibee Sans', cursive;
+    font-size: 110%;
+}
+
+body {
+    background-color: #E6CEA0;
+    overflow: hidden;
+    color: #65472c;
+}
+
+.row.content {
+    height: 1000px;
+
+}
+
+.sidenav {
+    padding-top: 20px;
+    height: 100%;
+    background-color: #65472c;
+    color: #E6CEA0;
+    font-size: 30px;
+}
+
+img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 1200px;
+    height: auto;
+}
+
+img:active {
+    width: 1150px;
+    height: auto;
+    transition: width 40ms;
+}
+
+img:hover {
+    cursor: grab;
+}
+
+#cookiesSize {
+    font-size: 250%;
+    font-weight: bold;
+}
+
+button {
+    background-color: #E6CEA0;
+    color: #65472c;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 15px;
+}
+
+button:active {
+    padding: 10px 19px;
+    background-color: #c2a96d;
+
+}
