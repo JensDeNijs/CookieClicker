@@ -28,7 +28,7 @@ I'm very happy with the end-result and I like the looks I gave to this project.
 
 
 
-###ToDo (while working on the project)
+### ToDo (while working on the project)
 - notes in code
 - readme repo
 - clean code
